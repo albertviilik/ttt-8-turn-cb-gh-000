@@ -39,6 +39,6 @@ def turn(board)
   if valid_move?(board, index)
 
   else
-    input = gets
+    index = input_to_index(gets.to_i)
   end
 end
