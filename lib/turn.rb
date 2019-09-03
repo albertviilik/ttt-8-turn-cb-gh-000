@@ -40,7 +40,7 @@ def turn(board)
   if b
     move(board, input)
   else
-    while true do
+    until b do
       puts "Please enter 1-9:"
       input = input_to_index(gets.to_i)
       if valid_move?(board, input)
