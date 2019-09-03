@@ -34,7 +34,7 @@ def move(board, index, player = "X")
   end
 end
 
-def turn(board, player)
+def turn(board)
   input = input_to_index(gets.to_i)
   until valid_move?(input)
     puts "Please enter 1-9:"
