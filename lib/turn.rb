@@ -39,5 +39,6 @@ def turn(board)
   input_is_valid = valid_move?(board, index)
   while !input_is_valid?
     index = input_to_index(gets)
+    input_is_valid = valid_move?(board, index)
   end
 end
