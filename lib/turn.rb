@@ -29,6 +29,7 @@ def position_taken?(board, index)
 end
 
 def move(board, index, player = "X")
+  puts "Please enter 1-9:"
   if valid_move?(board, index)
     board[index] = player
   end
