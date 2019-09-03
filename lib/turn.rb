@@ -45,5 +45,6 @@ def turn(board)
       input = input_to_index(gets.to_i)
     end
     move(board, index)
+    display_board(board)
   end
 end
