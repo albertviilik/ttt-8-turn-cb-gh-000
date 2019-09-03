@@ -40,11 +40,12 @@ def turn(board)
   if valid_move?(board, input)
     move(board, input)
     display_board(board)
+  else
+    until valid_move?(board, input)
+      puts "Please enter 1-9:"
+      input = input_to_index(gets.to_i)
+    end
+    move(board, input)
+    display_board(board)
   end
-  until valid_move?(board, input)
-    puts "Please enter 1-9:"
-    input = input_to_index(gets.to_i)
-  end
-  move(board, input)
-  display_board(board)
 end
