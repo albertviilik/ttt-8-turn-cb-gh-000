@@ -35,19 +35,4 @@ end
 
 def turn(board)
   puts "Please enter 1-9:"
-  index = input_to_index(gets.to_i)
-  b = valid_move?(board, input)
-  if b
-    move(board, input)
-  else
-    until b do
-      puts "Please enter 1-9:"
-      input = input_to_index(gets.to_i)
-      b = valid_move?(board, input)
-      if b
-        move(board, input)
-        break
-      end
-    end
-  end
 end
