@@ -44,5 +44,4 @@ def turn(board)
       input = input_to_index(gets.to_i)
     end
   end
-
 end
