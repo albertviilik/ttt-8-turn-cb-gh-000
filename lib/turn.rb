@@ -40,7 +40,7 @@ def turn(board)
   if !input_is_valid
     puts "Please enter 1-9:"
     until input_is_valid
-      
+      index = input_to_index(gets)
     end
   end
 end
