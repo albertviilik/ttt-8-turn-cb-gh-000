@@ -11,6 +11,13 @@ def input_to_index(input)
 end
 
 def valid_move?(board, index)
+  if position_taken?(board, index)
+    return nil
+  elsif index < 0 || index > 8
+    return nil
+  else
+    return true
+  end
 end
 
 def position_taken?(board, index)
