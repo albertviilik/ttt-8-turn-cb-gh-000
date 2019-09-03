@@ -40,7 +40,6 @@ def turn(board)
   if valid_move?(board, input)
     move(board, input)
     display_board(board)
-    break
   end
   until valid_move?(board, input)
     puts "Please enter 1-9:"
