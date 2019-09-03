@@ -41,7 +41,8 @@ def turn(board)
     move(board, index)
   else
     until valid_move?(board, index)
-
+      input = gets.to_i
+      index = input_to_index(input)
     end
   end
 end
